@@ -1,0 +1,61 @@
+@backgound-main-color: #F1F1F1;
+@vscode-blue: #0270BC;
+@btn-active: #E0E1E2;
+@normal-text: #555;
+@btn-text-inactive: #B7B8B8;
+@github-black: #1B1C1D;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: @normal-text;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+    color: @normal-text;
+    font-size: 14px;
+    &:hover {
+        color: @vscode-blue;
+    }
+}
+
+.card {
+  border: 1px solid #e7eaf1;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,37,55,.05);
+  margin-bottom: 20px;
+}
+
+#container {
+    background-color: @backgound-main-color;
+}
+
+.indicator-text {
+    font-size: 14px;
+    color: #B7B8B8;
+    line-height: 1.5;
+}
+
+.normal-btn {
+    border: none;
+    background-color: @backgound-main-color;
+    padding: 10px 0;
+    &:hover {
+        background-color: @btn-active;
+        cursor: pointer;
+        font-weight: 550;
+    }
+}
