@@ -4,6 +4,7 @@
 @normal-text: #555;
 @btn-text-inactive: #B7B8B8;
 @github-black: #1B1C1D;
+@border-zhihu: #e7eaf1;
 
 * {
     box-sizing: border-box;
@@ -32,6 +33,10 @@ a {
     }
 }
 
+p, span {
+    font-size: 14px;
+}
+
 .card {
   border: 1px solid #e7eaf1;
   border-radius: 2px;
@@ -58,4 +63,29 @@ a {
         cursor: pointer;
         font-weight: 550;
     }
+}
+
+// layout
+.main-container {
+  display: flex;
+  width: 980px;
+  margin: 25px auto;
+  justify-content: space-between;
+}
+
+.main-sidebar {
+  height: 1000px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  height: 1000px;
+  width: 720px;
+  background-color: white;
+  padding: 14px;
+  h4 {
+    margin-top: 10px 12px;
+  }
 }

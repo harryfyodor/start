@@ -1,9 +1,10 @@
 <template>
   <div class="navigator">
     <ul>
-      <li class="li-active"><a>每日足迹</a></li>
-      <li><a>目标管理</a></li>
-      <li><a>评论私信</a></li>
+      <li class="li-active"><router-link :to="{ name: 'main-index' }">每日足迹</router-link></li>
+      <li><router-link :to="{ name: 'main-manage' }">目标管理</router-link></li>
+      <li class=""><router-link :to="{ name: 'main-data' }">数据统计</router-link></li>
+      <li><router-link :to="{ name: 'main-comments' }">评论私信</router-link></li>
     </ul>
   </div>
 </template>
@@ -41,6 +42,7 @@ export default {
     a {
       font-size: 14px;
       line-height: 2px;
+      text-decoration: none;
     }
     &:hover {
       cursor: pointer;

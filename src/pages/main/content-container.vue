@@ -1,27 +1,31 @@
 <template>
-  <div id="app">
-    <div id="container">
-      <tophead></tophead>
-      <div class="main-container">
-        <router-view></router-view>
-      </div>
-      <footer>footer</footer>
+  <div class="main-container">
+    <div class="main-sidebar">
+      <sidebarAvatar></sidebarAvatar>
+    </div>
+    <div class="main-content card">
+      <navigator></navigator>
+      <slot></slot>
     </div>
   </div>
 </template>
 
 <script>
-import tophead from './components/tophead'
+import sidebarAvatar from '../../components/sidebar/sidebar-avatar'
+import navigator from '../../components/navigator'
+import calendar from '../../components/content/calendar'
 
 export default {
-  name: 'hello',
+  name: 'contentContainer',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
   },
   components: {
-    tophead
+    sidebarAvatar,
+    navigator,
+    calendar
   }
 }
 </script>

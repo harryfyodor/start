@@ -3,9 +3,9 @@
     <div class="header-wrap">
       <section>
         <ul class="header-btn">
-          <li><a>LOGO</a></li>
-          <li><a>动态</a></li>
-          <li><a>广场</a></li>
+          <li><router-link :to="{name: 'main-index'}">LOGO</router-link></li>
+          <li><router-link :to="{name: 'ground'}">动态</router-link></li>
+          <li><router-link :to="{name: 'elements'}">分子</router-link></li>
         </ul>
       </section>
       <section>
@@ -54,7 +54,8 @@ export default {
     align-center: flex-start;
 
     a {
-      color: @dark-btn-text
+      color: @dark-btn-text;
+      text-decoration: none;
     }
 
     li {
